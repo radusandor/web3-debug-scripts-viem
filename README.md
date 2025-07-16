@@ -18,17 +18,11 @@ A collection of TypeScript scripts using [Viem](https://viem.sh) for inspecting 
   •🌐 Ethereum mainnet or any EVM chain
 
 - `find_tx_by_nonce.ts`: 
-  Searches for a transaction from a given sender with a specific nonce across a block range.
-  Useful when troubleshooting user-submitted transactions that appear “missing” due to nonce mismanagement or replacement.
-  🛠️ Real-world example: Used to prove that a customer’s transaction with nonce X was already mined under a different hash.
-  Scans block-by-block using getBlock → getTransaction to locate sender+nonce match.
-  Includes safe JSON.stringify() for BigInt objects returned by Viem.
-  Great for identifying replaced or dropped txs in chains with high-frequency sender activity.
-  //Usage:
-  const sender = '0xAddress';
-  const nonce = 12;
-  const startBlock = 22036975;
-  const endBlock = 22036999;
+  Scans a specified block range to find a transaction with a given `nonce` from a specific sender.  
+  Useful for debugging issues where a transaction appears to be “missing” due to nonce mismanagement or replacement.  
+  Includes handling for Viem `BigInt` responses in logs, and safely prints both transaction and receipt data.  
+  🌐 Ethereum mainnet • 📍 Real-world support use case: helped prove a user's nonce `X` was mined under a different hash
+
 
 
 ### Usage
