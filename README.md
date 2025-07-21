@@ -23,7 +23,11 @@ A collection of TypeScript scripts using [Viem](https://viem.sh) for inspecting 
   Includes handling for Viem `BigInt` responses in logs, and safely prints both transaction and receipt data.  
   🌐 Ethereum mainnet • 📍 Real-world support use case: helped prove a user's nonce `X` was mined under a different hash
 
-
+- `ERC20_allowance_checker.ts`:
+  Checks the allowance set by an ERC-20 token holder to a spender (e.g. a DApp or smart contract).
+  Helps determine if a spender (like a DeFi protocol) is authorized to transfer tokens on behalf of a wallet, and how much they can currently spend.
+  Returns the token's symbol and allowance formatted using its decimals.
+  🌐 Ethereum mainnet or any EVM chain • 📦 Any ERC-20 contract 
 
 ### Usage
 
