@@ -29,6 +29,12 @@ A collection of TypeScript scripts using [Viem](https://viem.sh) for inspecting 
   Returns the token's symbol and allowance formatted using its decimals.
   🌐 Ethereum mainnet or any EVM chain • 📦 Any ERC-20 contract 
 
+- `wallet_transfer_log_scanner.ts`: 
+  Scans the USDC contract (or any ERC-20 token) to return transfer logs from a given wallet address, within a defined block range. Helpful for tracking on-chain activity, debugging missing transactions, or confirming execution, token movements
+  📩: wallet address, token address, block range
+  📤: transfer logs showing from, to, value, and transaction hash
+  🌐 Ethereum mainnet or any EVM chain • 📦 Any ERC-20 contract 
+
 ### Usage
 
 1. Clone the repo

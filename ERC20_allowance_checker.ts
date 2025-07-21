@@ -1,5 +1,5 @@
 import { createPublicClient, http, getContract, formatUnits } from 'viem'
-import { mainnet, bsc, forma } from 'viem/chains'
+import { mainnet, bsc } from 'viem/chains'
 import { SLP } from './abi/USDT';
 import { INFURA_URL } from './config';
 
