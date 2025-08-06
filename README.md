@@ -39,6 +39,8 @@ A collection of TypeScript scripts using [Viem](https://viem.sh) for inspecting 
   Scans blocks for **native ETH transfers** from a specific wallet (not token transfers)
   🌐 Ethereum mainnet or any EVM chain
 
+- `uniswap_pair_swap_scanner.ts`: Fetches Uniswap pair address via `getPair()`, decodes `Swap` events from the pair contract and identifies swap direction (token0 ➝ token1 or vice versa). Resolves token symbols and decimals and filters by receiving wallet (`args.to`). Pretty console output.
+
 ### Usage
 
 1. Clone the repo
